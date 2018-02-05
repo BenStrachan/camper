@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  vehicle_make: MyString
+  vehicle_model_title: MyString
+  vehicle_model_descritpion: MyString
+  start_year: MyString
+  end_year: MyString
+  rev: MyString
+  vmltm_no_brakes: MyString
+  vmltm_with_breaks: MyString
+  vmltm_balll_mass: MyString
+  conditions: MyString
+  vehicle_kerb_mass: MyString
+  gvm: MyString
+  gcm: MyString
+  roof_load: MyString
+  body_type: MyString
+
+two:
+  vehicle_make: MyString
+  vehicle_model_title: MyString
+  vehicle_model_descritpion: MyString
+  start_year: MyString
+  end_year: MyString
+  rev: MyString
+  vmltm_no_brakes: MyString
+  vmltm_with_breaks: MyString
+  vmltm_balll_mass: MyString
+  conditions: MyString
+  vehicle_kerb_mass: MyString
+  gvm: MyString
+  gcm: MyString
+  roof_load: MyString
+  body_type: MyString

@@ -1,0 +1,24 @@
+<%= simple_form_for([:admin, @vehicle]) do |f| %>
+
+  <div class="form-inputs">
+    <%= f.input :vehicle_make %>
+    <%= f.input :vehicle_model_title %>
+    <%= f.input :vehicle_model_descritpion %>
+    <%= f.input :start_year %>
+    <%= f.input :end_year %>
+    <%= f.input :rev %>
+    <%= f.input :vmltm_no_brakes %>
+    <%= f.input :vmltm_with_breaks %>
+    <%= f.input :vmltm_balll_mass %>
+    <%= f.input :conditions %>
+    <%= f.input :vehicle_kerb_mass %>
+    <%= f.input :gvm %>
+    <%= f.input :gcm %>
+    <%= f.input :roof_load %>
+    <%= f.input :body_type %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
