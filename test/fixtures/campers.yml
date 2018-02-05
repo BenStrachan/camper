@@ -1,0 +1,55 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  brand: MyString
+  model: MyString
+  version: MyString
+  display_price: MyString
+  price_min: MyString
+  price_max: MyString
+  capacity: MyString
+  link: MyString
+  gvm: MyString
+  ball_weight: MyString
+  solar: MyString
+  roof_rack: MyString
+  alloy_wheels: MyString
+  all_terrain_tyres: MyString
+  mud_tyres: MyString
+  twin_spares: MyString
+  1000L_water: MyString
+  deep_cycle_batteries: MyString
+  diesel_heating: MyString
+  air_conditioning: MyString
+  tv: MyString
+  ensuite: MyString
+  hot_water: MyString
+  independent_suspension: MyString
+  priority: MyString
+
+two:
+  brand: MyString
+  model: MyString
+  version: MyString
+  display_price: MyString
+  price_min: MyString
+  price_max: MyString
+  capacity: MyString
+  link: MyString
+  gvm: MyString
+  ball_weight: MyString
+  solar: MyString
+  roof_rack: MyString
+  alloy_wheels: MyString
+  all_terrain_tyres: MyString
+  mud_tyres: MyString
+  twin_spares: MyString
+  1000L_water: MyString
+  deep_cycle_batteries: MyString
+  diesel_heating: MyString
+  air_conditioning: MyString
+  tv: MyString
+  ensuite: MyString
+  hot_water: MyString
+  independent_suspension: MyString
+  priority: MyString

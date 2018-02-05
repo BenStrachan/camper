@@ -1,0 +1,34 @@
+<%= simple_form_for([:admin, @camper]) do |f| %>
+
+  <div class="form-inputs">
+    <%= f.input :brand %>
+    <%= f.input :model %>
+    <%= f.input :version %>
+    <%= f.input :display_price %>
+    <%= f.input :price_min %>
+    <%= f.input :price_max %>
+    <%= f.input :capacity %>
+    <%= f.input :link %>
+    <%= f.input :gvm %>
+    <%= f.input :ball_weight %>
+    <%= f.input :solar %>
+    <%= f.input :roof_rack %>
+    <%= f.input :alloy_wheels %>
+    <%= f.input :all_terrain_tyres %>
+    <%= f.input :mud_tyres %>
+    <%= f.input :twin_spares %>
+    <%= f.input :large_water %>
+    <%= f.input :deep_cycle_batteries %>
+    <%= f.input :diesel_heating %>
+    <%= f.input :air_conditioning %>
+    <%= f.input :tv %>
+    <%= f.input :ensuite %>
+    <%= f.input :hot_water %>
+    <%= f.input :independent_suspension %>
+    <%= f.input :priority %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

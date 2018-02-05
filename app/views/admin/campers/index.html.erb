@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="col-md-6 col-sm-6 col-6">
+    <h1>Campers</h1>
+  </div>
+  <div class="col-md-6 col-sm-6 col-6 text-right">
+    <a class="btn btn-outline-primary" href="<%= new_admin_camper_path %>">New</a>
+  </div>
+</div>
+
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Brand</th>
+      <th>Model</th>
+      <th>Version</th>
+      <th>Display price</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @campers.each do |camper| %>
+      <tr>
+        <td><%= camper.brand %></td>
+        <td><%= camper.model %></td>
+        <td><%= camper.version %></td>
+        <td><%= camper.display_price %></td>
+        <td><%= link_to 'Show', admin_camper_path(camper) %> |
+        <%= link_to 'Edit', edit_admin_camper_path(camper) %> |
+        <%= link_to 'Destroy', admin_camper_path(camper), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

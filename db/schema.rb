@@ -10,10 +10,40 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180205053055) do
+ActiveRecord::Schema.define(version: 20180205092811) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "campers", force: :cascade do |t|
+    t.string "brand"
+    t.string "model"
+    t.string "version"
+    t.string "display_price"
+    t.string "price_min"
+    t.string "price_max"
+    t.string "capacity"
+    t.string "link"
+    t.string "gvm"
+    t.string "ball_weight"
+    t.string "solar"
+    t.string "roof_rack"
+    t.string "alloy_wheels"
+    t.string "all_terrain_tyres"
+    t.string "mud_tyres"
+    t.string "twin_spares"
+    t.string "large_water"
+    t.string "deep_cycle_batteries"
+    t.string "diesel_heating"
+    t.string "air_conditioning"
+    t.string "tv"
+    t.string "ensuite"
+    t.string "hot_water"
+    t.string "independent_suspension"
+    t.string "priority"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
