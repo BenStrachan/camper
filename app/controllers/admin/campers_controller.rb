@@ -66,7 +66,7 @@ module Admin
 
       # Never trust parameters from the scary internet, only allow the white list through.
       def camper_params
-        params.require(:camper).permit(:brand, :model, :version, :display_price, :price_min, :price_max, :capacity, :link, :gvm, :ball_weight, :solar, :roof_rack, :alloy_wheels, :all_terrain_tyres, :mud_tyres, :twin_spares, :large_water, :deep_cycle_batteries, :diesel_heating, :air_conditioning, :tv, :ensuite, :hot_water, :independent_suspension, :priority)
+        params.require(:camper).permit(:brand, :model, :version, :display_price, :price_min, :price_max, :capacity, :link, :type_a, :type_b, :type_c, :atm, :tare, :gvm, :ball_weight, :solar, :roof_rack, :alloy_wheels, :all_terrain_tyres, :mud_tyres, :twin_spares, :large_water, :deep_cycle_batteries, :diesel_heating, :air_conditioning, :tv, :ensuite, :hot_water, :independent_suspension, :priority)
       end
   end
 end
