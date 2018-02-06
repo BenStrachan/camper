@@ -64,7 +64,7 @@ module Admin
 
       # Never trust parameters from the scary internet, only allow the white list through.
       def vehicle_params
-        params.require(:vehicle).permit(:vehicle_make, :vehicle_model_title, :vehicle_model_descritpion, :start_year, :end_year, :rev, :vmltm_no_brakes, :vmltm_with_breaks, :vmltm_balll_mass, :conditions, :vehicle_kerb_mass, :gvm, :gcm, :roof_load, :body_type)
+        params.require(:vehicle).permit(:vehicle_make, :vehicle_model_title, :vehicle_model_descritpion, :start_year, :end_year, :with_breaks, :ball_mass_max)
       end
   end
 end
