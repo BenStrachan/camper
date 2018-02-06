@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180206040254) do
+ActiveRecord::Schema.define(version: 20180206225433) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -88,16 +88,8 @@ ActiveRecord::Schema.define(version: 20180206040254) do
     t.string "vehicle_model_descritpion"
     t.string "start_year"
     t.string "end_year"
-    t.string "rev"
-    t.string "vmltm_no_brakes"
-    t.string "vmltm_with_breaks"
-    t.string "vmltm_balll_mass"
-    t.string "conditions"
-    t.string "vehicle_kerb_mass"
-    t.string "gvm"
-    t.string "gcm"
-    t.string "roof_load"
-    t.string "body_type"
+    t.string "with_breaks"
+    t.string "ball_mass_max"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
