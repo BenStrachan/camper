@@ -14,7 +14,17 @@ Rails.application.routes.draw do
 
   namespace :admin do
     resources :users
-    resources :vehicles
-    resources :campers
+    resources :vehicles do
+      collection do 
+        get :import
+        post :process_import
+      end
+    end
+    resources :campers do
+      collection do 
+        get :import
+        post :process_import
+      end
+    end
   end
 end

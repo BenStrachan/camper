@@ -56,6 +56,27 @@ module Admin
     end
   end
 
+  def import
+
+  end
+
+  def process_import
+    csv = CSV.parse(File.read(params[:file].path), :headers => false)
+    csv.each do |row|
+      next if row[0] == 'VEHICLE MAKE' || row[0].blank?
+      Vehicle.create vehicle_make: row[0],
+                     vehicle_model_title: row[1],
+                     vehicle_model_descritpion: row[2],
+                     start_year: row[3],
+                     end_year: row[4],
+                     with_breaks: row[6],
+                     ball_mass_max: row[7]
+    end
+
+    redirect_to admin_vehicles_url, 
+                notice: 'Vehicles was successfully imported.'
+  end
+
     private
       # Use callbacks to share common setup or constraints between actions.
       def set_vehicle

@@ -81,6 +81,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
     crass (1.0.3)
+    csv (1.0.1)
     devise (4.3.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -263,6 +264,7 @@ DEPENDENCIES
   cancan
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
+  csv
   devise
   devise_invitable
   font-awesome-sass (~> 4.7.0)

@@ -58,6 +58,47 @@ module Admin
     end
   end
 
+  def import
+
+  end
+
+  def process_import
+    csv = CSV.parse(File.read(params[:file].path), :headers => false)
+    csv.each do |row|
+      next if row[0].blank?
+      Camper.create brand: row[0],
+                     model: row[1],
+                     version: row[2],
+                     display_price: row[3],
+                     capacity: row[4],
+                     link: row[5],
+                     type_a: row[6],
+                     type_b: row[7],
+                     type_c: row[8],
+                     atm: row[9],
+                     tare: row[10],
+                     ball_weight: row[11],
+                     solar: row[12] == "YES" ? true : false,
+                     roof_rack: row[13] == "YES" ? true : false,
+                     alloy_wheels: row[14] == "YES" ? true : false,
+                     all_terrain_tyres: row[15] == "YES" ? true : false,
+                     mud_tyres: row[16] == "YES" ? true : false,
+                     twin_spares: row[17] == "YES" ? true : false,
+                     large_water: row[18] == "YES" ? true : false,
+                     deep_cycle_batteries: row[19] == "YES" ? true : false,
+                     diesel_heating: row[20] == "YES" ? true : false,
+                     air_conditioning: row[21] == "YES" ? true : false,
+                     tv: row[22] == "YES" ? true : false,
+                     ensuite: row[23] == "YES" ? true : false,
+                     hot_water: row[24] == "YES" ? true : false,
+                     independent_suspension: row[25] == "YES" ? true : false,
+                     priority: row[26]
+    end
+
+    redirect_to admin_campers_url, 
+                notice: 'Campers was successfully imported.'
+  end
+
     private
       # Use callbacks to share common setup or constraints between actions.
       def set_camper

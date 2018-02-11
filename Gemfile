@@ -29,6 +29,7 @@ gem 'aws-sdk', '~> 2.3'
 
 gem 'ransack'
 gem "select2-rails"
+gem 'csv'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
