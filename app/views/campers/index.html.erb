@@ -1,32 +1,30 @@
 <%= search_form_for @search do |f| %>
   <div class="row">
-    <div class="col-sm-6">
+    <div class="col-md-2">
       <div class="form-group">
         <label>Price Min</label>
         <%= f.search_field :display_price_gteq, class: 'form-control' %>
       </div>
     </div>
-    <div class="col-sm-6">
+    <div class="col-md-2">
       <div class="form-group">
         <label>Price Max</label>
         <%= f.search_field :display_price_lteq, class: 'form-control' %>
       </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-4">
+    <div class="col-md-2">
       <div class="form-group">
         <label>Capacity</label>
         <%= f.search_field :capacity_lteq, class: 'form-control' %>
       </div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-md-2">
       <div class="form-group">
         <label>Max Ball Mass</label>
         <%= f.search_field :ball_weight_lteq, class: 'form-control' %>
       </div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-md-2">
       <div class="form-group">
         <label>Max With Breaks</label>
         <%= f.search_field :tare_lteq, class: 'form-control' %>
@@ -34,7 +32,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-12">
+    <div class="col-md-10">
       <div class="form-group">
         <label>Inclusions</label>
         <select name="inclusions[]" class="select2 form-control" multiple="true">
