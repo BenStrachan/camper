@@ -1,7 +1,7 @@
 <% @vehicles.each do |vehicle| %>
   <div class="item">
     <a href="<%= campers_path(q: { ball_weight_lteq: vehicle.ball_mass_max, tare_lteq: vehicle.with_breaks }) %>" >
-      <%= vehicle.vehicle_make %> | <%= vehicle.vehicle_model_title %> | <%= vehicle.vehicle_model_descritpion %>
+      <%= vehicle.vehicle_make %> | <%= vehicle.vehicle_model_title %> | <%= vehicle.vehicle_model_descritpion %> | <%= vehicle.start_year %> to <%= vehicle.end_year %>
     </a>
   </div>
 <% end %>
