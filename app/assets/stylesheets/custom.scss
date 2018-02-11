@@ -60,3 +60,28 @@ section {
   border-radius: 5px;
   margin-bottom: 30px;
 }
+
+.hero-section {
+  background: image-url('camper.jpg') fixed no-repeat;
+  background-size: cover;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  padding-top: 180px;
+}
+
+.hero-heading {
+  color: white;
+  font-size: 70px;
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+
+.hero-subheading {
+  color: white;
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}

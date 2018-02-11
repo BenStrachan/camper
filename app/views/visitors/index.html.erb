@@ -1,14 +1,16 @@
-<div class="jumbotron">
-  <h1 class="display-2">Camper App</h1>
-  <p class="lead">
-    An application to help choose the best camper.
-  </p>
-  <div class="form-group box-search">
-    <input type="text" class="form-control" id="search-vehicle" placeholder="Search Vehicle Make & Model">
-    <div class="list-vehicles">
+<div class="jumbotron hero-section">
+  <div class="container col-md-6 col-12">
+    <h1 class="hero-heading">Camper App</h1>
+    <p class="hero-subheading">
+      An application to help choose the best camper.
+    </p>
+    <div class="form-group box-search">
+      <input type="text" class="form-control" id="search-vehicle" placeholder="Search Vehicle Make & Model">
+      <div class="list-vehicles">
+      </div>
     </div>
+    <a class="hero-subheading" href="#">Don't know vehicle?</a>
   </div>
-  <a href="#">Don't know vehicle?</a>
 </div>
 
 <% content_for :page_js do %>
@@ -19,7 +21,7 @@
       $.ajax({
         url: '/vehicles',
         type: 'GET',
-        data: { q: { 
+        data: { q: {
           start_year_or_end_year_or_vehicle_make_or_vehicle_model_title_or_vehicle_model_descritpion_cont: $('#search-vehicle').val(),
         }},
         success: function(res) {
