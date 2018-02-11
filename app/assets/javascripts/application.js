@@ -14,5 +14,5 @@
 //= require popper
 //= require bootstrap-sprockets
 //= require rails-ujs
-//= require turbolinks
+//= require select2-full
 //= require_tree .

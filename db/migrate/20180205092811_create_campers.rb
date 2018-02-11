@@ -4,27 +4,27 @@ class CreateCampers < ActiveRecord::Migration[5.1]
       t.string :brand
       t.string :model
       t.string :version
-      t.string :display_price
-      t.string :price_min
-      t.string :price_max
-      t.string :capacity
+      t.decimal :display_price, scale: 2
+      t.decimal :price_min, scale: 2
+      t.decimal :price_max, scale: 2
+      t.decimal :capacity, scale: 2
       t.string :link
       t.string :gvm
-      t.string :ball_weight
-      t.string :solar
-      t.string :roof_rack
-      t.string :alloy_wheels
-      t.string :all_terrain_tyres
-      t.string :mud_tyres
-      t.string :twin_spares
-      t.string :large_water
-      t.string :deep_cycle_batteries
-      t.string :diesel_heating
-      t.string :air_conditioning
-      t.string :tv
-      t.string :ensuite
-      t.string :hot_water
-      t.string :independent_suspension
+      t.decimal :ball_weight, scale: 2
+      t.boolean :solar
+      t.boolean :roof_rack
+      t.boolean :alloy_wheels
+      t.boolean :all_terrain_tyres
+      t.boolean :mud_tyres
+      t.boolean :twin_spares
+      t.boolean :large_water
+      t.boolean :deep_cycle_batteries
+      t.boolean :diesel_heating
+      t.boolean :air_conditioning
+      t.boolean :tv
+      t.boolean :ensuite
+      t.boolean :hot_water
+      t.boolean :independent_suspension
       t.string :priority
 
       t.timestamps

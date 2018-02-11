@@ -14,7 +14,8 @@
       <%= render 'layouts/navbar' %>
     </header>
     <main role="main">
-       <%= yield %>
+      <%= yield %>
     </main>
+    <%= yield(:page_js) %>
   </body>
 </html>

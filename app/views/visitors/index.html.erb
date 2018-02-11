@@ -1,10 +1,33 @@
-  <div class="jumbotron">
-    <h1 class="display-2">Camper App</h1>
-    <p class="lead">
-      An application to help choose the best camper.
-    </p>
-    <div class="form-group">
-      <input type="text" class="form-control" id="usr" placeholder="Search Vehicle Make & Model">
+<div class="jumbotron">
+  <h1 class="display-2">Camper App</h1>
+  <p class="lead">
+    An application to help choose the best camper.
+  </p>
+  <div class="form-group box-search">
+    <input type="text" class="form-control" id="search-vehicle" placeholder="Search Vehicle Make & Model">
+    <div class="list-vehicles">
     </div>
-    <a class="btn btn-outline-primary nav-button" href="#"> Search Vehicle</a> | <a href="#">Don't know vehicle?</a>
-    </div>
+  </div>
+  <a href="#">Don't know vehicle?</a>
+</div>
+
+<% content_for :page_js do %>
+<script type="text/javascript">
+  (function() {
+    $('#search-vehicle').keyup(function(event) {
+      $('.box-search').addClass('active');
+      $.ajax({
+        url: '/vehicles',
+        type: 'GET',
+        data: { q: { 
+          start_year_or_end_year_or_vehicle_make_or_vehicle_model_title_or_vehicle_model_descritpion_cont: $('#search-vehicle').val(),
+        }},
+        success: function(res) {
+          $('.list-vehicles').html(res);
+        }
+      })
+    });
+  })();
+  // start_year_gteq_or_end_year_lteq_or_
+</script>
+<% end %>

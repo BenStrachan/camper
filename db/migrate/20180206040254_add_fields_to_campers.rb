@@ -4,6 +4,6 @@ class AddFieldsToCampers < ActiveRecord::Migration[5.1]
     add_column :campers, :type_b, :string
     add_column :campers, :type_c, :string
     add_column :campers, :atm, :string
-    add_column :campers, :tare, :string
+    add_column :campers, :tare, :decimal
   end
 end

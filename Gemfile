@@ -27,6 +27,8 @@ gem 'font-awesome-sass', '~> 4.7.0'
 gem "paperclip", "~> 5.2.1"
 gem 'aws-sdk', '~> 2.3'
 
+gem 'ransack'
+gem "select2-rails"
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

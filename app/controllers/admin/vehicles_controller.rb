@@ -1,5 +1,5 @@
 module Admin
-  class VehiclesController < ApplicationController
+  class VehiclesController < BaseController
     before_action :set_vehicle, only: [:show, :edit, :update, :destroy]
 
     # GET /vehicles

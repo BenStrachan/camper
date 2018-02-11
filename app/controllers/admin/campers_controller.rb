@@ -1,5 +1,5 @@
 module Admin
-  class CampersController < ApplicationController
+  class CampersController < BaseController
     before_action :set_camper, only: [:show, :edit, :update, :destroy]
 
     # GET /campers
