@@ -1,40 +1,48 @@
 <%= search_form_for @search do |f| %>
   <div class="row">
-    <div class="col-md-2">
+    <div class="col-md-2 col-6">
       <div class="form-group">
         <label>Price Min</label>
         <%= f.search_field :display_price_gteq, class: 'form-control' %>
       </div>
     </div>
-    <div class="col-md-2">
+    <div class="col-md-2 col-6">
       <div class="form-group">
         <label>Price Max</label>
         <%= f.search_field :display_price_lteq, class: 'form-control' %>
       </div>
     </div>
-    <div class="col-md-2">
+    <div class="col-md-2 col-6">
       <div class="form-group">
         <label>Capacity</label>
         <%= f.search_field :capacity_lteq, class: 'form-control' %>
       </div>
     </div>
-    <div class="col-md-2">
+    <div class="col-md-2 col-6">
       <div class="form-group">
         <label>Max Ball Mass</label>
         <%= f.search_field :ball_weight_lteq, class: 'form-control' %>
       </div>
     </div>
-    <div class="col-md-2">
+    <div class="col-md-2 col-6">
       <div class="form-group">
         <label>Max With Breaks</label>
         <%= f.search_field :tare_lteq, class: 'form-control' %>
       </div>
     </div>
+    <div class="col-md-2 col-6">
+      <div class="form-group">
+        <label>Type</label>
+        <select name="q[type_a_cont]" class="form-control">
+          <%= options_for_select([["All", ""], "OFF ROAD", "ON ROAD"], params[:q][:type_a_cont]) %>
+        </select>
+      </div>
+    </div>
   </div>
   <div class="row">
-    <div class="col-md-10">
+    <div class="col-md-12">
       <div class="form-group">
-        <label>Inclusions</label>
+        <label style="">Inclusions</label>
         <select name="inclusions[]" class="select2 form-control" multiple="true">
           <%= options_for_select(Camper::INCLUSIONS, params[:inclusions]) %>
         </select>

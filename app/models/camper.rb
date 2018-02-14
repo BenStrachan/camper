@@ -6,27 +6,27 @@
 #  brand                  :string
 #  model                  :string
 #  version                :string
-#  display_price          :string
-#  price_min              :string
-#  price_max              :string
-#  capacity               :string
+#  display_price          :float
+#  price_min              :float
+#  price_max              :float
+#  capacity               :float
 #  link                   :string
 #  gvm                    :string
-#  ball_weight            :string
-#  solar                  :string
-#  roof_rack              :string
-#  alloy_wheels           :string
-#  all_terrain_tyres      :string
-#  mud_tyres              :string
-#  twin_spares            :string
-#  large_water            :string
-#  deep_cycle_batteries   :string
-#  diesel_heating         :string
-#  air_conditioning       :string
-#  tv                     :string
-#  ensuite                :string
-#  hot_water              :string
-#  independent_suspension :string
+#  ball_weight            :float
+#  solar                  :boolean
+#  roof_rack              :boolean
+#  alloy_wheels           :boolean
+#  all_terrain_tyres      :boolean
+#  mud_tyres              :boolean
+#  twin_spares            :boolean
+#  large_water            :boolean
+#  deep_cycle_batteries   :boolean
+#  diesel_heating         :boolean
+#  air_conditioning       :boolean
+#  tv                     :boolean
+#  ensuite                :boolean
+#  hot_water              :boolean
+#  independent_suspension :boolean
 #  priority               :string
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
@@ -34,7 +34,7 @@
 #  type_b                 :string
 #  type_c                 :string
 #  atm                    :string
-#  tare                   :string
+#  tare                   :decimal(, )
 #
 
 class Camper < ApplicationRecord

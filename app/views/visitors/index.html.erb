@@ -22,7 +22,7 @@
         url: '/vehicles',
         type: 'GET',
         data: { q: {
-          start_year_or_end_year_or_vehicle_make_or_vehicle_model_title_or_vehicle_model_descritpion_cont: $('#search-vehicle').val(),
+          start_year_or_end_year_or_name_or_vehicle_model_descritpion_cont: $('#search-vehicle').val(),
         }},
         success: function(res) {
           $('.list-vehicles').html(res);
